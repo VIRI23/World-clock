@@ -5,27 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>🌎World Clock⏲ ~ Viriany Cobos</title>
   </head>
   <body>
     <div class="container">
       <h1>🌎 World Clock 🕐</h1>
-      <select>
+
+      <select id="city">
         <option value="">Select a city..</option>
-        <option value="">Madird</option>
-        <option value="">New York</option>
-        <option value="">Guadalajara</option>
+        <option value="current">My current location</option>
+        <option value="">Europe/Madird</option>
+        <option value="">America/New_York</option>
+        <option value="">America/Guadalajara</option>
       </select>
 
-      <div class="city">
-        <h2>El Paso 🌄</h2>
-        <div class="date">March 6th 2023</div>
-        <div class="time">1:07:15 PM</div>
-      </div>
-      <div class="city">
-        <h2>Tokyo🗼</h2>
-        <div class="date">March 6th 2023</div>
-        <div class="time">1:07:15 PM</div>
+      <div id="cities">
+        <div class="city" id="el-paso">
+          <div>
+            <h2>El Paso 🌄</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="tokyo">
+          <div>
+            <h2>Tokyo🗼</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
       </div>
     </div>
     <footer>
